@@ -1,0 +1,6 @@
+
+The script get-free-sql-tools.sh simply downloads a number of 
+publicly available Oracle SQL tuning tools and zips them into 
+a single file.
+
+
