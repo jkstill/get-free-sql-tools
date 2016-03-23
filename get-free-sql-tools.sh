@@ -8,6 +8,10 @@ Session Snapper 4
 Home: http://blog.tanelpoder.com/2013/02/10/session-snapper-v4-the-worlds-most-advanced-oracle-troubleshooting-script/
 Download: http://blog.tanelpoder.com/files/scripts/snapper4.sql
 
+Oracle Script Library
+Home: https://github.com/jkstill/oracle-script-lib
+Download: https://github.com/jkstill/oracle-script-lib/archive/master.zip
+
 
 SQLd360
 Home: http://mauro-pagano.com/2015/02/16/sqld360-sql-diagnostics-collection-made-faster/
@@ -38,9 +42,10 @@ JKS-DOC
 declare -a tools
 declare -a urls
 
-tools=(snapper sqld360 pathfinder tunas360 edb360 meta360)
+tools=(snapper oracle-script-lib sqld360 pathfinder tunas360 edb360 meta360)
 urls=(\
 	http://blog.tanelpoder.com/files/scripts/snapper4.sql \
+	https://github.com/jkstill/oracle-script-lib/archive/master.zip \
 	https://github.com/mauropagano/sqld360/archive/master.zip \
 	https://github.com/mauropagano/pathfinder/archive/master.zip \
 	https://github.com/mauropagano/tunas360/archive/master.zip \
