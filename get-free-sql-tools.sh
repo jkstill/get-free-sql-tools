@@ -81,7 +81,27 @@ done
 echo toolStr: $toolStr
 
 zip -r $zipFile $toolStr
+ZIP_SUCCESS=$?
 
+# remove the directories if the file exists and no error codes
 
+if [ "$ZIP_SUCCESS" == 0 -a -r "$zipFile" ]; then
+	echo
+	echo Cleaning up...
+	echo 
+
+	i=0
+
+	while [ $i -lt $toolCount ]
+	do
+		echo Removing work directory for: ${tools[$i]}
+		[[ -d  ${tools[$i]} ]] && {
+			rm -f ${tools[$i]}/*
+			rmdir ${tools[$i]}
+		}
+		(( i++ ))
+	done
+
+fi
 
 
