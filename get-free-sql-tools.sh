@@ -69,7 +69,7 @@ done
 
 i=0
 
-zipFile='free-sql-tools.zip'
+zipFile='free-sql-tools.'`date +%Y%m%d`'.zip'
 
 echo 
 echo Creating Zip File $zipFile
